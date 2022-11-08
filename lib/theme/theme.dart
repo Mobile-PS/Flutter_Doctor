@@ -8,13 +8,13 @@ class AppTheme {
     backgroundColor: LightColor.background,
     primaryColor: LightColor.purple,
     cardTheme: CardTheme(color: LightColor.background),
-    textTheme: TextTheme(display1: TextStyle(color: LightColor.black)),
+   // textTheme: TextTheme(display1: TextStyle(color: LightColor.black)),
     iconTheme: IconThemeData(color: LightColor.iconColor),
     bottomAppBarColor: LightColor.background,
     dividerColor: LightColor.grey,
-    primaryTextTheme: TextTheme(
+    /*primaryTextTheme: TextTheme(
       body1: TextStyle(color:LightColor.titleTextColor)
-    )
+    )*/
   );
 
   static TextStyle titleStyle = const TextStyle(color: LightColor.titleTextColor, fontSize: 16);
@@ -26,6 +26,7 @@ class AppTheme {
   static TextStyle h4Style = const TextStyle(fontSize: 18);
   static TextStyle h5Style = const TextStyle(fontSize: 16);
   static TextStyle h6Style = const TextStyle(fontSize: 14);
+
 
   static List<BoxShadow> shadow =  <BoxShadow>[
     BoxShadow(color: Color(0xfff8f8f8), blurRadius: 10, spreadRadius: 15),

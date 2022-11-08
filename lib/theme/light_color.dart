@@ -25,4 +25,10 @@ class LightColor {
 
   static const Color black = Color(0xff20262C);
   static const Color lightblack = Color(0xff5F5F60);
+
+  static const kPrimaryBlue = Color(0xff040f48);
+
+  static const splashColor = Color(0xff2E3A48);
+
+
 }
