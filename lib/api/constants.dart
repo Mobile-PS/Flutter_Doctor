@@ -14,8 +14,11 @@ class ApiConstants {
 
  // final baseUrl = 'http://103.38.50.82:8080/DoctorAppoinment/';
 
-  final baseUrl = 'http://103.38.50.113:8080/Fine_Feathers.1/';
-  final imagebaseUrl = 'http://103.38.50.113:8080/Fine_Feathers.1/images/';
+  final baseUrl = 'http://103.38.50.113:8080/Medcore_clinic/';
+  final imagebaseUrl = 'http://103.38.50.113:8080/Medcore_clinic/images/';
+
+  //final baseUrl = 'http://103.38.50.113:8080/Fine_Feathers.1/';
+ // final imagebaseUrl = 'http://103.38.50.113:8080/Fine_Feathers.1/images/';
 
   String searchUrl() => baseUrl + 'SearchbarServlet';
 

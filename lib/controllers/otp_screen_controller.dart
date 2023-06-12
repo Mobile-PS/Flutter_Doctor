@@ -58,7 +58,8 @@ class OtpScreenController extends GetxController {
       _prefRepo.saveMobile(mobiletxtController.text);
 
       //showSnackbar('S');
-      Get.to(ReferalScreen());
+     // Get.to(ReferalScreen());
+       Get.to(VerifyOtpScreen());
 
     }
     else{

@@ -321,7 +321,7 @@ class _HomePageState extends State<HomePageScreen> {
             itemCount: regCtrl.categoryDataModel.show.length,
             itemBuilder: (BuildContext context, int index) {
               return  ServiceCard(
-                  icon: regCtrl.categoryDataModel.show[index].serviceImage, label: regCtrl.categoryDataModel.show[index].service,id: regCtrl.categoryDataModel.show[index].id,);
+                  icon: regCtrl.categoryDataModel.show[index].serviceImage, label: regCtrl.categoryDataModel.show[index].service,id: regCtrl.categoryDataModel.show[index].id,index: index,);
 
               /*return _categoryCardWidget(
                 "CT",
@@ -467,7 +467,7 @@ class _HomePageState extends State<HomePageScreen> {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-            'assets/banner1.jpg',
+            'assets/launcher1.jpeg',
           ),
           fit: BoxFit.fitWidth,
         ),
@@ -641,7 +641,7 @@ class _HomePageState extends State<HomePageScreen> {
           floatingActionButton: FloatingActionButton(
             onPressed: () async {
 
-              await launch ("tel:+917080909046");
+              await launch ("tel:+2349024667402");
 
             },
             child: Icon(Icons.call, color: Colors.white, size: 29,),

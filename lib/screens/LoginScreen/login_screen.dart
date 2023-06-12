@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_health_care_app/controllers/otp_screen_controller.dart';
 import 'package:flutter_health_care_app/screens/LoginScreen/components/body.dart';
+import 'package:flutter_health_care_app/screens/LoginScreen/referal_screen.dart';
 import 'package:flutter_health_care_app/screens/OtpVerificationScreen/otp_verification_screen.dart';
 import 'package:flutter_health_care_app/utilities/common.dart';
 import 'package:flutter_health_care_app/utilities/constants.dart';
@@ -147,7 +148,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       text: "Next",
                       press: () {
 
-                        if(regCtrl.mobiletxtController.text !=null && regCtrl.mobiletxtController.text.length == 10) {
+                      //  Get.to(ReferalScreen());
+
+                         if(regCtrl.mobiletxtController.text !=null && regCtrl.mobiletxtController.text.length == 10) {
 
                           if(regCtrl.checkBox) {
                             regCtrl.getOtp();

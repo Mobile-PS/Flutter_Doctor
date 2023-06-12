@@ -15,21 +15,39 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class ServiceCard extends StatelessWidget {
   final icon;
   final label;
-  final int id;
+  final int id,index;
 
-  const ServiceCard({this.icon, this.label,this.id});
+  const ServiceCard({this.icon, this.label,this.id,this.index});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
 
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SubServiceScreen1(id: id,label:label),
-          ),
-        );
+        if(index == 1){
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => XrayScreen(id: id),
+            ),
+          );
+        }
+        else if(index == 2){
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => GeneralSurgeyServiceScreen(id: id),
+            ),
+          );
+        }
+        else {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SubServiceScreen1(id: id, label: label),
+            ),
+          );
+        }
 
       /*  if(id == 50) {
           Navigator.push(

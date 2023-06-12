@@ -125,7 +125,7 @@ class _ReferalScreenState extends State<ReferalScreen> {
         text: "Next",
         press: () {
 
-          if(regCtrl.mobiletxtController.text !=null && regCtrl.mobiletxtController.text.isNotEmpty){
+         /* if(regCtrl.mobiletxtController.text !=null && regCtrl.mobiletxtController.text.isNotEmpty){
 
             regCtrl.getReferal();
           }
@@ -133,7 +133,10 @@ class _ReferalScreenState extends State<ReferalScreen> {
 
             showSnackbar('please enter Referral code ');
 
-          }
+          }*/
+
+          Get.offAll(HomePageScreen());
+
 
         },
         skip: (){
